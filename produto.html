@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produto | Decisão Ponderada</title>
+<meta name="description" content="Ficha técnica e preço de equipamento solar — kits, inversores e baterias.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div id="site-header" data-active="produtos"></div>
+
+<section style="padding:150px 0 80px;">
+  <div class="container">
+    <a href="produtos.html" class="pd-back">← Voltar aos produtos</a>
+    <div class="product-detail" id="productDetail"></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title related-title">Produtos relacionados</h2>
+    <div class="product-grid" id="relatedGrid" style="margin-top:30px;"></div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="container cta-strip-inner reveal-up">
+    <h2>Tem dúvidas sobre este equipamento?</h2>
+    <a href="contacto.html" class="btn btn-primary btn-lg">Falar com um Especialista</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="products-data.js"></script>
+<script src="partials.js"></script>
+<script src="script.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>

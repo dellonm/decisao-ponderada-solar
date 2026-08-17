@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactos | Decisão Ponderada — Energia Solar</title>
+<meta name="description" content="Peça uma simulação gratuita para o seu sistema de energia solar. Contactos, telefone, email e formulário de orçamento.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☀️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div id="site-header" data-active="contacto"></div>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb reveal-up in"><a href="index.html">Início</a> / <span>Contactos</span></div>
+    <h1 class="reveal-up in">Peça a sua simulação solar gratuita</h1>
+    <p class="reveal-up in">Preencha o formulário ou ligue-nos diretamente — respondemos em 24h úteis com uma proposta à sua medida.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div class="contact-info reveal-left">
+      <div class="eyebrow"><span class="dot"></span> Contactos diretos</div>
+      <h2 class="section-title">Vamos conversar sobre o seu projeto</h2>
+      <p class="lead">Sem compromisso, sem pressão de venda — só uma proposta clara e ponderada.</p>
+      <ul class="contact-list">
+        <li><span>📞</span> <a href="tel:+351935707051">935 707 051</a></li>
+        <li><span>📞</span> <a href="tel:+351919107035">919 107 035</a></li>
+        <li><span>📞</span> <a href="tel:+351245413017">245 413 017</a></li>
+        <li><span>✉️</span> <a href="mailto:decisao.ponderada@sapo.pt">decisao.ponderada@sapo.pt</a></li>
+      </ul>
+      <div class="social-row">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+      <div class="map-embed" style="margin-top:34px;">Cobertura em todo Portugal continental</div>
+    </div>
+    <form class="contact-form reveal-right" id="contactForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="name">Nome</label>
+          <input id="name" name="name" type="text" placeholder="O seu nome" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Telefone</label>
+          <input id="phone" name="phone" type="tel" placeholder="912 345 678" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="oseuemail@exemplo.pt" required>
+      </div>
+      <div class="form-field">
+        <label for="service">Serviço / Produto pretendido</label>
+        <select id="service" name="service">
+          <option>Kit Solar</option>
+          <option>Inversor</option>
+          <option>Bateria</option>
+          <option>Eletricidade</option>
+          <option>Ar Condicionado</option>
+          <option>Canalização</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="4" placeholder="Conte-nos sobre o seu consumo médio, tipo de telhado ou projeto..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg full">Enviar Pedido</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="products-data.js"></script>
+<script src="partials.js"></script>
+<script src="script.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>

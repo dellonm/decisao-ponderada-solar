@@ -1,28 +1,13 @@
-// ===== Year =====
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// ===== Nav scroll state =====
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 30);
-}, { passive: true });
-
-// ===== Mobile menu =====
-const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-burger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-  burger.classList.toggle('open');
-});
-mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-  mobileMenu.classList.remove('open');
-}));
+// Nav scroll state, mobile menu and footer year are handled in partials.js
+// once the shared header/footer are injected.
 
 // ===== Cursor glow =====
 const glow = document.getElementById('cursorGlow');
-window.addEventListener('mousemove', (e) => {
-  glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
-}, { passive: true });
+if (glow) {
+  window.addEventListener('mousemove', (e) => {
+    glow.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%,-50%)`;
+  }, { passive: true });
+}
 
 // ===== Scroll reveal (IntersectionObserver) =====
 const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
@@ -79,11 +64,13 @@ initTilt('.tilt-3d', 5);
 // ===== Contact form (demo submit) =====
 const form = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  formNote.textContent = 'Obrigado! A sua mensagem foi enviada — entraremos em contacto brevemente.';
-  form.reset();
-});
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formNote.textContent = 'Obrigado! A sua mensagem foi enviada — entraremos em contacto brevemente.';
+    form.reset();
+  });
+}
 
 // ===== Three.js hero particle field =====
 (function initHero3D() {
