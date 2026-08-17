@@ -483,6 +483,13 @@ section{padding:110px 0;position:relative;}
   color:var(--text);font-family:inherit;font-size:1rem;outline:none;transition:border-color .25s;
 }
 .quiz-field input:focus{border-color:var(--accent);}
+.quiz-field textarea{
+  background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;
+  color:var(--text);font-family:inherit;font-size:.95rem;outline:none;transition:border-color .25s;resize:vertical;
+}
+.quiz-field textarea:focus{border-color:var(--accent);}
+.quiz-note-field{margin-top:22px;}
+.quiz-note-field label{color:var(--accent);font-weight:600;}
 
 .quiz-nav{margin-top:26px;}
 .quiz-back{background:none;border:none;color:var(--text-faint);font-size:.88rem;cursor:pointer;padding:8px 0;}

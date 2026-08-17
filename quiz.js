@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     timeline: null,
     owner: null,
     motivations: [],
+    note: '',
     name: '',
     phone: '',
     email: '',
@@ -130,10 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
         answers.current_bill = document.getElementById('current_bill').value.trim();
       }
 
-      if (stepNum === 7 && answers.motivations.length === 0) {
-        stepEl.querySelector('.quiz-options').classList.add('shake');
-        setTimeout(() => stepEl.querySelector('.quiz-options').classList.remove('shake'), 400);
-        return;
+      if (stepNum === 7) {
+        if (answers.motivations.length === 0) {
+          stepEl.querySelector('.quiz-options').classList.add('shake');
+          setTimeout(() => stepEl.querySelector('.quiz-options').classList.remove('shake'), 400);
+          return;
+        }
+        const noteEl = document.getElementById('quiz_note');
+        answers.note = noteEl ? noteEl.value.trim() : '';
       }
 
       goNext();

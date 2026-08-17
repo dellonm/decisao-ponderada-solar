@@ -127,13 +127,17 @@
           <button type="button" class="quiz-option" data-value="Esta a construir/remodelar">🏗️ Estou a construir ou remodelar</button>
           <button type="button" class="quiz-option" data-value="Recomendacao de outro cliente">🗣️ Fui recomendado por outro cliente</button>
         </div>
+        <div class="quiz-field quiz-note-field">
+          <label for="quiz_note">NOTA: quer dizer-nos mais alguma coisa? (opcional)</label>
+          <textarea id="quiz_note" name="note" rows="3" placeholder="Ex: tenho sombra no telhado à tarde, já tenho orçamentos de outras empresas, prefiro ser contactado ao fim do dia..."></textarea>
+        </div>
         <button type="button" class="btn btn-primary btn-lg quiz-next">Continuar →</button>
       </div>
 
       <!-- Step 8: Contacto -->
       <div class="quiz-step" data-step="8">
         <h2>Falta só uma coisa — para onde enviamos a proposta?</h2>
-        <p class="quiz-step-sub" id="urgencyRecap">A nossa equipa vai analisar o seu perfil e priorizar o contacto.</p>
+        <p class="quiz-step-sub" id="urgencyRecap">Depois de submeter, um elemento da nossa equipa vai enviar-lhe uma mensagem e um email para agendar uma chamada rápida e recolher os últimos detalhes.</p>
         <div class="quiz-field">
           <label for="qname">Nome</label>
           <input type="text" id="qname" name="name" placeholder="O seu nome" required>
@@ -147,7 +151,7 @@
           <input type="email" id="qemail" name="email" placeholder="oseuemail@exemplo.pt" required>
         </div>
         <button type="submit" class="btn btn-primary btn-lg full" id="submitQuiz">Receber a Minha Proposta →</button>
-        <p class="quiz-disclaimer">Ao submeter, aceita ser contactado pela nossa equipa sobre este pedido.</p>
+        <p class="quiz-disclaimer">Ao submeter, aceita ser contactado pela nossa equipa (mensagem, email ou chamada) sobre este pedido.</p>
       </div>
 
       <div class="quiz-nav">
@@ -158,10 +162,10 @@
     <div class="quiz-success" id="quizSuccess" style="display:none;">
       <div class="quiz-success-icon">✓</div>
       <h2>Pedido recebido!</h2>
-      <p id="successMessage">A nossa equipa vai analisar a sua morada e consumo e entra em contacto em até 24h úteis com uma proposta à sua medida.</p>
+      <p id="successMessage">Obrigado! Um elemento da nossa equipa vai enviar-lhe uma <strong>mensagem</strong> e um <strong>email</strong> nas próximas horas para agendar uma chamada rápida e recolher os últimos detalhes do seu projeto.</p>
       <div class="quiz-urgency" style="margin-top:24px;">
         <span class="pulse-dot"></span>
-        Guarde o telemóvel por perto — ligamos do número da Decisão Ponderada.
+        Guarde o telemóvel e o email por perto — é assim que vamos marcar a sua chamada.
       </div>
       <a href="index.html" class="btn btn-ghost btn-lg" style="margin-top:30px;">Voltar ao Início</a>
     </div>
