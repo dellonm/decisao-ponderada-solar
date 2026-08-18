@@ -214,5 +214,37 @@ const PRODUCTS = [
     price: 219.00,
     specs: ["Ângulo ajustável 10°–30°", "Ideal para terraços e coberturas planas", "Lastro em betão opcional"],
     desc: "Sistema de suporte com inclinação ajustável para maximizar a produção em coberturas planas."
+  },
+  {
+    id: "ev-wallbox-7kw",
+    cat: "carregadores",
+    catLabel: "Carregadores EV",
+    name: "Carregador Wallbox 7.4 kW Monofásico",
+    brand: "Wallbox",
+    price: 549.00,
+    tag: "Mais vendido",
+    specs: ["7.4 kW, monofásico", "Cabo Tipo 2, 5 metros", "Ideal para carregamento noturno", "Compatível com autoconsumo solar"],
+    desc: "Entrada acessível para quem quer carregar o carro elétrico em casa, aproveitando a energia produzida durante o dia."
+  },
+  {
+    id: "ev-wallbox-11kw",
+    cat: "carregadores",
+    catLabel: "Carregadores EV",
+    name: "Carregador Wallbox 11 kW Trifásico",
+    brand: "Wallbox",
+    price: 799.00,
+    specs: ["11 kW, trifásico", "Carregamento até 3x mais rápido que o monofásico", "App de monitorização", "Instalação em garagem ou exterior"],
+    desc: "Para quem precisa de carregar mais rápido — ideal para veículos com maior autonomia de bateria."
+  },
+  {
+    id: "ev-wallbox-22kw-app",
+    cat: "carregadores",
+    catLabel: "Carregadores EV",
+    name: "Carregador Wallbox 22 kW Trifásico com App",
+    brand: "Wallbox",
+    price: 1199.00,
+    tag: "Topo de gama",
+    specs: ["22 kW, trifásico", "Gestão inteligente de carga via app", "Integração com sistema solar (carrega o excedente)", "Controlo remoto e agendamento"],
+    desc: "O carregador mais rápido e mais inteligente da gama — prioriza a energia solar disponível antes de puxar da rede."
   }
 ];

@@ -6,7 +6,8 @@ const CAT_GLYPH = {
   inversores: "⚡",
   baterias: "🔋",
   estruturas: "🔧",
-  acessorios: "🔌"
+  acessorios: "🔌",
+  carregadores: "🚗"
 };
 
 const CAT_LABELS = {
@@ -15,7 +16,8 @@ const CAT_LABELS = {
   inversores: "Inversores",
   baterias: "Baterias & Acessórios",
   estruturas: "Estruturas",
-  acessorios: "Acessórios"
+  acessorios: "Acessórios",
+  carregadores: "Carregadores EV"
 };
 
 function formatPrice(n) {
