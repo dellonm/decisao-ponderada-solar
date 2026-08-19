@@ -244,6 +244,11 @@ section{padding:110px 0;position:relative;}
 .pain-cta p{margin:14px 0 0;color:var(--text-faint);font-size:.85rem;}
 
 /* ---------- Trustpilot-style review carousel ---------- */
+.tp-score{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:8px;}
+.tp-stars-lg .tp-star{width:30px;height:30px;}
+.tp-score-label{color:var(--text-dim);font-size:.95rem;}
+.tp-score-label strong{color:var(--text);font-size:1.1rem;}
+.tp-score-count{color:var(--text-faint);}
 .tp-carousel{margin-top:44px;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding-bottom:8px;}
 .tp-track{display:flex;gap:18px;width:max-content;}
 .tp-card{
