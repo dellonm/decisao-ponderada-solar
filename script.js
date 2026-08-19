@@ -100,10 +100,10 @@ if (form) {
   geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
   const mat = new THREE.PointsMaterial({
-    color: 0xffd23f,
-    size: 0.11,
+    color: 0x0b1e3a,
+    size: 0.13,
     transparent: true,
-    opacity: 0.75,
+    opacity: 0.55,
     sizeAttenuation: true
   });
   const points = new THREE.Points(geo, mat);
@@ -111,7 +111,7 @@ if (form) {
 
   // A subtle icosahedron "solar cell" wireframe centerpiece
   const icoGeo = new THREE.IcosahedronGeometry(7, 1);
-  const icoMat = new THREE.MeshBasicMaterial({ color: 0xff9f4d, wireframe: true, transparent: true, opacity: 0.18 });
+  const icoMat = new THREE.MeshBasicMaterial({ color: 0xf28c28, wireframe: true, transparent: true, opacity: 0.32 });
   const ico = new THREE.Mesh(icoGeo, icoMat);
   ico.position.set(0, 0, -6);
   scene.add(ico);

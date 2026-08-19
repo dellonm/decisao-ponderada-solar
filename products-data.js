@@ -1,4 +1,4 @@
-// Catálogo de produtos — Decisão Ponderada
+// Catálogo de produtos — Lumanova Energia
 // Categorias: kits, inversores, baterias, estruturas, acessorios
 const PRODUCTS = [
   {
@@ -200,7 +200,7 @@ const PRODUCTS = [
     cat: "estruturas",
     catLabel: "Estruturas",
     name: "Estrutura de Fixação para Telhado Inclinado",
-    brand: "Decisão Ponderada",
+    brand: "Lumanova Energia",
     price: 189.00,
     specs: ["Alumínio anodizado resistente à corrosão", "Compatível com telha cerâmica e chapa", "Kit por painel"],
     desc: "Estrutura de montagem certificada para instalação segura de painéis em telhados inclinados."
@@ -210,7 +210,7 @@ const PRODUCTS = [
     cat: "estruturas",
     catLabel: "Estruturas",
     name: "Estrutura de Fixação para Cobertura Plana",
-    brand: "Decisão Ponderada",
+    brand: "Lumanova Energia",
     price: 219.00,
     specs: ["Ângulo ajustável 10°–30°", "Ideal para terraços e coberturas planas", "Lastro em betão opcional"],
     desc: "Sistema de suporte com inclinação ajustável para maximizar a produção em coberturas planas."

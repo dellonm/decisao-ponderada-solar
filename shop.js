@@ -97,7 +97,7 @@ function initProductDetail() {
   const id = params.get('id');
   const product = PRODUCTS.find(p => p.id === id) || PRODUCTS[0];
 
-  document.title = `${product.name} | Decisão Ponderada`;
+  document.title = `${product.name} | Lumanova Energia`;
 
   wrap.innerHTML = `
     <div class="pd-visual reveal-left in">

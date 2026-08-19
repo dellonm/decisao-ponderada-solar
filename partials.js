@@ -21,8 +21,8 @@ function renderHeader(active) {
     <header class="nav" id="nav">
       <div class="nav-inner">
         <a href="index.html" class="logo">
-          <span class="logo-mark">☀</span>
-          <span class="logo-text">Decisão<em>Ponderada</em></span>
+          <img src="assets/logo-mark.png" alt="Lumanova Energia" class="logo-mark-img">
+          <span class="logo-text">Lumanova<em>Energia</em></span>
         </a>
         <nav class="nav-links">${links}</nav>
         <a href="contacto.html" class="btn btn-primary nav-cta">Pedir Orçamento</a>
@@ -47,8 +47,8 @@ function renderFooter() {
       <div class="container footer-grid">
         <div>
           <a href="index.html" class="logo">
-            <span class="logo-mark">☀</span>
-            <span class="logo-text">Decisão<em>Ponderada</em></span>
+            <img src="assets/logo-mark.png" alt="Lumanova Energia" class="logo-mark-img">
+            <span class="logo-text">Lumanova<em>Energia</em></span>
           </a>
           <p>Painéis solares, baterias, inversores, eletricidade, ar-condicionado e canalização — em todo Portugal.</p>
         </div>
@@ -73,7 +73,7 @@ function renderFooter() {
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>© <span id="year"></span> Decisão Ponderada. Todos os direitos reservados.</span>
+        <span>© <span id="year"></span> Lumanova Energia. Todos os direitos reservados.</span>
       </div>
     </footer>
   `;
