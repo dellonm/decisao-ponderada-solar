@@ -526,4 +526,9 @@ section{padding:110px 0;position:relative;}
   .pain-grid{grid-template-columns:1fr;}
   .floating-cta{right:16px;bottom:16px;padding:12px 14px;font-size:0;gap:0;}
   .floating-cta-icon{font-size:1.15rem;}
+  .container{padding:0 18px;}
+}
+@media (max-width:380px){
+  .container{padding:0 14px;}
+  .nav-inner{padding:0 14px;}
 }
