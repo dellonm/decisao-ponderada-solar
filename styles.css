@@ -21,7 +21,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;overscroll-behavior-y:none;}
 body{
   margin:0;
   background:var(--bg);
@@ -532,3 +532,12 @@ section{padding:110px 0;position:relative;}
   .container{padding:0 14px;}
   .nav-inner{padding:0 14px;}
 }
+
+/* Touch devices: a :hover transform shifts the element the instant a finger
+   lands on it, which iOS/Android can read as a drag and cancel the tap —
+   the button then needs a second tap to actually register. Disable hover
+   transforms wherever there's no real pointer to hover with. */
+@media (hover:none), (pointer:coarse){
+  .btn-primary:hover,.btn-ghost:hover,.hero .btn-ghost:hover,.floating-cta:hover,.pain-card:hover{transform:none!important;}
+}
+button,a.btn,.floating-cta{touch-action:manipulation;}
