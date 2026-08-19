@@ -226,6 +226,30 @@ section{padding:110px 0;position:relative;}
 .process-step h3{margin:0 0 8px;font-size:1.05rem;}
 .process-step p{margin:0;color:var(--text-dim);font-size:.9rem;line-height:1.55;}
 
+/* ---------- Pain points ---------- */
+.pain-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px;}
+.pain-card{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:28px 22px;text-align:center;transition:transform .3s var(--ease),border-color .3s;
+}
+.pain-card:hover{transform:translateY(-4px);border-color:rgba(255,210,63,.35);}
+.pain-icon{font-size:1.7rem;display:block;margin-bottom:12px;}
+.pain-card p{margin:0;font-size:.95rem;color:var(--text);line-height:1.5;font-weight:500;}
+.pain-cta{text-align:center;margin-top:44px;}
+.pain-cta p{margin:14px 0 0;color:var(--text-faint);font-size:.85rem;}
+
+/* ---------- Floating quiz CTA ---------- */
+.floating-cta{
+  position:fixed;right:24px;bottom:24px;z-index:900;
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-grad);color:#111;font-weight:600;font-size:.9rem;
+  padding:14px 22px;border-radius:100px;
+  box-shadow:0 10px 28px -8px rgba(255,159,77,.55);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+}
+.floating-cta:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 14px 34px -6px rgba(255,159,77,.7);}
+.floating-cta-icon{font-size:1.05rem;line-height:1;}
+
 /* ---------- Gallery ---------- */
 .gallery-grid{
   max-width:var(--maxw);margin:50px auto 0;padding:0 28px;
@@ -398,7 +422,7 @@ section{padding:110px 0;position:relative;}
 .timeline-item h3{margin:0 0 6px;font-size:1.05rem;}
 .timeline-item p{margin:0;color:var(--text-dim);font-size:.92rem;line-height:1.6;}
 
-.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:20px;}
+.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:20px;}
 .value-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;}
 .value-card .value-icon{font-size:1.6rem;margin-bottom:12px;display:block;}
 .value-card h3{margin:0 0 8px;font-size:1.05rem;}
@@ -442,6 +466,7 @@ section{padding:110px 0;position:relative;}
   .testi-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .form-row{grid-template-columns:1fr;}
+  .pain-grid{grid-template-columns:repeat(2,1fr);}
 }
 @media (max-width:560px){
   section{padding:70px 0;}
@@ -453,4 +478,7 @@ section{padding:110px 0;position:relative;}
   .footer-grid{grid-template-columns:1fr;}
   .about-badge{position:static;margin-top:16px;}
   .cta-strip-inner{flex-direction:column;text-align:center;}
+  .pain-grid{grid-template-columns:1fr;}
+  .floating-cta{right:16px;bottom:16px;padding:12px 14px;font-size:0;gap:0;}
+  .floating-cta-icon{font-size:1.15rem;}
 }

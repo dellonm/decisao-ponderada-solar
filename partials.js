@@ -80,11 +80,25 @@ function renderFooter() {
   document.getElementById('year').textContent = new Date().getFullYear();
 }
 
+function renderFloatingCTA() {
+  if (document.getElementById('floatingQuizCta')) return;
+  const a = document.createElement('a');
+  a.id = 'floatingQuizCta';
+  a.href = 'https://dellonm.github.io/lumanova-energia-quiz/';
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.className = 'floating-cta';
+  a.setAttribute('aria-label', 'Fazer simulação solar gratuita');
+  a.innerHTML = '<span class="floating-cta-icon">💡</span><span class="floating-cta-text">Simulação Grátis</span>';
+  document.body.appendChild(a);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('site-header');
   const active = header ? header.dataset.active : '';
   renderHeader(active);
   renderFooter();
+  renderFloatingCTA();
 
   // nav behaviors that depend on injected DOM
   const nav = document.getElementById('nav');
