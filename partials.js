@@ -74,6 +74,7 @@ function renderFooter() {
       </div>
       <div class="container footer-bottom">
         <span>© <span id="year"></span> Luminova Energia. Todos os direitos reservados.</span>
+        <a href="privacidade.html">Política de Privacidade</a>
       </div>
     </footer>
   `;
