@@ -8,6 +8,7 @@ const PRODUCTS = [
     name: "Kit Solar Lítio Deye S2 — 20 kWh/dia",
     brand: "Deye",
     price: 3034.52,
+    img: "assets/products/kit-s2-20kwh.png",
     tag: "Mais vendido",
     specs: ["20 kWh/dia de produção", "Bateria de lítio 5.12 kWh, 90% DOD", "Inversor híbrido incluído", "Instalação monofásica"],
     desc: "Kit completo para autoconsumo residencial com armazenamento em bateria de lítio. Ideal para casas com consumo médio que querem reduzir a fatura e ter energia de reserva."
@@ -19,6 +20,7 @@ const PRODUCTS = [
     name: "Kit Solar S3 — 20 kWh/dia, 2 baterias",
     brand: "Deye",
     price: 3972.00,
+    img: "assets/products/kit-s3-20kwh-2bat.png",
     specs: ["20 kWh/dia de produção", "2x baterias de lítio SE-G5.1 Pro-B (5.12 kWh cada)", "10.24 kWh de capacidade total", "Expansível"],
     desc: "Kit com capacidade de armazenamento reforçada — duas baterias de lítio para maior autonomia em dias sem sol."
   },
@@ -29,6 +31,7 @@ const PRODUCTS = [
     name: "Kit Solar Lítio D20 — 12 kWh/dia",
     brand: "Deye / Pylontech",
     price: 3758.22,
+    img: "assets/products/kit-d20-12kwh.png",
     specs: ["12 kWh/dia de produção", "Bateria Pylontech 4.8 kWh", "Compacto, ideal para apartamentos e T2/T3", "Monitorização via app"],
     desc: "Solução de entrada para quem quer começar a poupar com painéis solares sem grande investimento inicial."
   },
@@ -39,6 +42,7 @@ const PRODUCTS = [
     name: "Kit Solar Lítio Deye S4 — 30 kWh/dia",
     brand: "Deye",
     price: 5095.32,
+    img: "assets/products/kit-s4-30kwh.png",
     specs: ["30 kWh/dia de produção", "Bateria de lítio 10.24 kWh, 90% DOD", "Para consumos elevados", "Inversor híbrido WiFi"],
     desc: "Para moradias com consumo elevado — climatização, carregamento de veículo elétrico e uso intensivo de eletrodomésticos."
   },
@@ -49,6 +53,7 @@ const PRODUCTS = [
     name: "Kit Solar Lítio D21 — 20 kWh/dia",
     brand: "Deye / Pylontech",
     price: 5612.81,
+    img: "assets/products/kit-d21-20kwh.png",
     specs: ["20 kWh/dia de produção", "Bateria Pylontech 9.6 kWh, 90% DOD", "Alta densidade energética", "Design modular"],
     desc: "Armazenamento Pylontech de referência com excelente relação capacidade/espaço ocupado."
   },
@@ -59,6 +64,7 @@ const PRODUCTS = [
     name: "Kit Solar Lítio Deye S5 — 30 kWh/dia",
     brand: "Deye",
     price: 6032.80,
+    img: "assets/products/kit-s5-30kwh.png",
     tag: "Recomendado",
     specs: ["30 kWh/dia de produção", "Bateria de lítio 15.36 kWh, 90% DOD", "Máxima autonomia residencial", "Garantia alargada"],
     desc: "O nosso kit residencial mais completo — máxima produção e armazenamento para independência quase total da rede."
@@ -70,6 +76,7 @@ const PRODUCTS = [
     name: "Kit Lítio Trifásico D9 — 30 kWh/dia",
     brand: "Deye / WeCo",
     price: 6820.32,
+    img: "assets/products/kit-d9-30kwh-trifasico.png",
     specs: ["30 kWh/dia, ligação trifásica", "Bateria WeCo 16.3 kWh, 98% DOD", "Ideal para moradias grandes", "Suporta cargas trifásicas"],
     desc: "Sistema trifásico para casas com quadro elétrico trifásico ou consumos mais exigentes."
   },
@@ -80,6 +87,7 @@ const PRODUCTS = [
     name: "Kit Lítio Deye D7 — 30 kWh/dia",
     brand: "Deye / WeCo",
     price: 7504.12,
+    img: "assets/products/kit-d7-30kwh.png",
     specs: ["30 kWh/dia de produção", "Bateria WeCo 15.66 kWh", "Elevada autonomia diária", "Compatível com expansão futura"],
     desc: "Equilíbrio entre produção elevada e capacidade de armazenamento robusta."
   },
@@ -90,6 +98,7 @@ const PRODUCTS = [
     name: "Kit Lítio Deye D8 — 30 kWh/dia",
     brand: "Deye / WeCo",
     price: 9147.92,
+    img: "assets/products/kit-d8-30kwh.png",
     specs: ["30 kWh/dia de produção", "Bateria WeCo 20.88 kWh", "Máxima capacidade de armazenamento", "Para independência energética total"],
     desc: "O topo de gama para quem quer o máximo de autonomia possível face à rede elétrica."
   },
@@ -100,6 +109,7 @@ const PRODUCTS = [
     name: "Kit Trifásico D10 — 30 kWh/dia",
     brand: "Deye / WeCo",
     price: 9885.76,
+    img: "assets/products/kit-d10-30kwh-trifasico.png",
     tag: "Topo de gama",
     specs: ["30 kWh/dia, trifásico", "Bateria WeCo 10.6 kWh", "Para moradias e pequenos negócios", "Elevada fiabilidade"],
     desc: "Solução trifásica premium pensada para consumos comerciais ou moradias de grande dimensão."
@@ -111,6 +121,7 @@ const PRODUCTS = [
     name: "Inversor Híbrido Deye Sun 3kW Monofásico",
     brand: "Deye",
     price: 877.72,
+    img: "assets/products/inv-deye-3kw.png",
     specs: ["3 kW de potência", "Monofásico", "Compatível com bateria de lítio", "Modelo 3K-SG04LP1-EU-SM1"],
     desc: "Inversor híbrido de entrada, robusto e eficiente, para sistemas residenciais de menor dimensão."
   },
@@ -121,6 +132,7 @@ const PRODUCTS = [
     name: "Inversor Híbrido Deye Sun 3000W 500V/24V MPPT WiFi",
     brand: "Deye",
     price: 1000.15,
+    img: "assets/products/inv-deye-3kw-500v.png",
     specs: ["3000W, monofásico", "500V / 24V, MPPT duplo", "WiFi integrado", "Monitorização remota via app"],
     desc: "Controlo total do sistema a partir do telemóvel, com dois MPPT para maior eficiência de captação."
   },
@@ -131,6 +143,7 @@ const PRODUCTS = [
     name: "Inversor Híbrido Deye Sun 5000W 2 MPPT WiFi",
     brand: "Deye",
     price: 1163.35,
+    img: "assets/products/inv-deye-5kw.jpeg",
     tag: "Mais vendido",
     specs: ["5000W de potência", "2 MPPT, WiFi, paralelizável", "Modelo SG03LP1-EU", "Ideal para expansão futura"],
     desc: "O inversor mais versátil da gama — paralelizável para quem prevê aumentar a potência instalada no futuro."
@@ -142,6 +155,7 @@ const PRODUCTS = [
     name: "Rack PowerCube H2 6+1 para Baterias Pylontech",
     brand: "PowerCube",
     price: 366.00,
+    img: "assets/products/bat-pylontech-rack-6.jpeg",
     specs: ["Configuração 6+1 módulos", "Compatível com baterias Pylontech", "Estrutura reforçada"],
     desc: "Suporte robusto para organizar e proteger o seu banco de baterias Pylontech."
   },
@@ -152,6 +166,7 @@ const PRODUCTS = [
     name: "Rack PowerCube H2 12+1 para Baterias Pylontech",
     brand: "PowerCube",
     price: 475.65,
+    img: "assets/products/bat-pylontech-rack-12.png",
     specs: ["Configuração 12+1 módulos", "Compatível com baterias Pylontech", "Para instalações de maior capacidade"],
     desc: "Versão de maior capacidade do rack PowerCube, para bancos de baterias expandidos."
   },
@@ -162,6 +177,7 @@ const PRODUCTS = [
     name: "Armário de Baterias Pylontech U16",
     brand: "Pylontech",
     price: 303.70,
+    img: "assets/products/bat-armario-u16.jpeg",
     specs: ["Armário de armazenamento dedicado", "Proteção e organização das baterias", "Fácil instalação"],
     desc: "Armário fechado para instalação segura e esteticamente cuidada do banco de baterias."
   },
@@ -172,6 +188,7 @@ const PRODUCTS = [
     name: "Armário 12U para 4 Módulos Pylontech US3000C",
     brand: "Pylontech",
     price: 276.02,
+    img: "assets/products/bat-armario-12u.jpeg",
     specs: ["Formato 12U", "Capacidade para 4 módulos US3000C", "Ventilação otimizada"],
     desc: "Compatível com os módulos US3000C, com espaço otimizado para instalação em garagem ou arrecadação."
   },
@@ -182,6 +199,7 @@ const PRODUCTS = [
     name: "Conjunto de Conectores WeCo 5k3 (360A) — 2 unidades",
     brand: "WeCo",
     price: 57.84,
+    img: "assets/products/acc-conectores-weco-5k3.png",
     specs: ["Corrente nominal 360A", "Pack com 2 unidades", "Ligação segura entre baterias"],
     desc: "Conectores de alta corrente para ligação entre módulos de bateria WeCo."
   },
@@ -192,6 +210,7 @@ const PRODUCTS = [
     name: "Conjunto de Conectores WeCo 4k4 LT (360A) — 2 unidades",
     brand: "WeCo",
     price: 57.84,
+    img: "assets/products/acc-conectores-weco-4k4.png",
     specs: ["Corrente nominal 360A", "Pack com 2 unidades", "Compatível com série 4k4 LT"],
     desc: "Solução de ligação fiável para expansão de bancos de baterias WeCo série 4k4."
   },

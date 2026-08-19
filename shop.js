@@ -27,9 +27,11 @@ function formatPrice(n) {
 function productCardHTML(p) {
   return `
     <a class="product-card tilt reveal-up" href="produto.html?id=${p.id}">
-      <div class="product-visual">
+      <div class="product-visual${p.img ? ' has-photo' : ''}">
         ${p.tag ? `<span class="product-tag">${p.tag}</span>` : ''}
-        <span class="glyph">${CAT_GLYPH[p.cat] || '☀'}</span>
+        ${p.img
+          ? `<img class="product-photo" src="${p.img}" alt="${p.name}" loading="lazy">`
+          : `<span class="glyph">${CAT_GLYPH[p.cat] || '☀'}</span>`}
       </div>
       <div class="product-body">
         <span class="product-cat">${p.catLabel}</span>
@@ -100,9 +102,11 @@ function initProductDetail() {
   document.title = `${product.name} | Luminova Energia`;
 
   wrap.innerHTML = `
-    <div class="pd-visual reveal-left in">
+    <div class="pd-visual reveal-left in${product.img ? ' has-photo' : ''}">
       ${product.tag ? `<span class="product-tag">${product.tag}</span>` : ''}
-      <span class="glyph">${CAT_GLYPH[product.cat] || '☀'}</span>
+      ${product.img
+        ? `<img class="product-photo" src="${product.img}" alt="${product.name}" loading="lazy">`
+        : `<span class="glyph">${CAT_GLYPH[product.cat] || '☀'}</span>`}
     </div>
     <div class="reveal-right in">
       <div class="pd-brand">${product.brand} · ${product.catLabel}</div>
