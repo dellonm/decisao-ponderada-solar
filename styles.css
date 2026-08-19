@@ -355,7 +355,7 @@ section{padding:110px 0;position:relative;}
 .footer-grid h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.04em;color:var(--text-faint);margin:0 0 16px;}
 .footer-grid a,.footer-grid .reg{display:block;color:var(--text-dim);font-size:.92rem;margin-bottom:10px;}
 .footer-grid a:hover{color:var(--text);}
-.footer-bottom{padding:22px 0;color:var(--text-faint);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;}
+.footer-bottom{padding:22px 0;color:var(--text-faint);font-size:.85rem;display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;}
 .footer-bottom a:hover{color:var(--accent);}
 
 /* ---------- Reveal animations ---------- */
