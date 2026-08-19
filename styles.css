@@ -243,6 +243,36 @@ section{padding:110px 0;position:relative;}
 .pain-cta{text-align:center;margin-top:44px;}
 .pain-cta p{margin:14px 0 0;color:var(--text-faint);font-size:.85rem;}
 
+/* ---------- Trustpilot-style review carousel ---------- */
+.tp-carousel{margin-top:44px;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding-bottom:8px;}
+.tp-track{display:flex;gap:18px;width:max-content;}
+.tp-card{
+  scroll-snap-align:start;flex:none;width:340px;background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;gap:14px;
+}
+.tp-head{display:flex;align-items:center;gap:14px;}
+.tp-avatar{
+  width:48px;height:48px;border-radius:50%;background:#d1f5df;color:#111;font-weight:800;font-size:1rem;
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.tp-head strong{display:block;font-size:.98rem;}
+.tp-head small{color:var(--text-faint);font-size:.8rem;}
+.tp-stars{display:flex;gap:3px;}
+.tp-star{
+  width:20px;height:20px;flex:none;background:#dcdce6;
+  -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.3l7.1-.7z'/%3E%3C/svg%3E");
+  mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l2.9 6.6 7.1.7-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7L2 9.3l7.1-.7z'/%3E%3C/svg%3E");
+  -webkit-mask-size:contain;mask-size:contain;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+}
+.tp-star.full{background:#00b67a;}
+.tp-star.half{background:linear-gradient(90deg,#00b67a 50%,#dcdce6 50%);}
+.tp-title{margin:0;font-size:1.02rem;font-weight:700;}
+.tp-body{margin:0;color:var(--text-dim);font-size:.92rem;line-height:1.6;}
+.tp-hint{text-align:center;color:var(--text-faint);font-size:.82rem;margin-top:18px;}
+@media (max-width:560px){
+  .tp-card{width:82vw;}
+}
+
 /* ---------- Floating quiz CTA ---------- */
 .floating-cta{
   position:fixed;right:24px;bottom:24px;z-index:900;
