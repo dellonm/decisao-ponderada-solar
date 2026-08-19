@@ -84,7 +84,7 @@ function renderFloatingCTA() {
   if (document.getElementById('floatingQuizCta')) return;
   const a = document.createElement('a');
   a.id = 'floatingQuizCta';
-  a.href = 'https://dellonm.github.io/luminova-energia-quiz/';
+  a.href = 'https://hyperscaleh.github.io/luminova-energia-quiz/';
   a.target = '_blank';
   a.rel = 'noopener';
   a.className = 'floating-cta';
