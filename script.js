@@ -100,21 +100,14 @@ if (form) {
   geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
   const mat = new THREE.PointsMaterial({
-    color: 0x0b1e3a,
+    color: 0xf5a623,
     size: 0.13,
     transparent: true,
-    opacity: 0.55,
+    opacity: 0.65,
     sizeAttenuation: true
   });
   const points = new THREE.Points(geo, mat);
   scene.add(points);
-
-  // A subtle icosahedron "solar cell" wireframe centerpiece
-  const icoGeo = new THREE.IcosahedronGeometry(7, 1);
-  const icoMat = new THREE.MeshBasicMaterial({ color: 0xf28c28, wireframe: true, transparent: true, opacity: 0.32 });
-  const ico = new THREE.Mesh(icoGeo, icoMat);
-  ico.position.set(0, 0, -6);
-  scene.add(ico);
 
   let mouseX = 0, mouseY = 0;
   window.addEventListener('mousemove', (e) => {
@@ -136,8 +129,6 @@ if (form) {
     const t = clock.getElapsedTime();
     points.rotation.y = t * 0.02 + mouseX * 0.3;
     points.rotation.x = t * 0.01 + mouseY * 0.2;
-    ico.rotation.y = t * 0.08;
-    ico.rotation.x = t * 0.05;
     camera.position.x += (mouseX * 3 - camera.position.x) * 0.02;
     camera.position.y += (-mouseY * 2 - camera.position.y) * 0.02;
     camera.lookAt(0, 0, 0);
