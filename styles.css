@@ -108,25 +108,16 @@ a{color:inherit;text-decoration:none;}
 .hero-video{
   position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;
 }
-.hero-video-scrim{
-  position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:linear-gradient(180deg, rgba(6,12,24,.42) 0%, rgba(6,12,24,.22) 40%, rgba(6,12,24,.55) 78%, var(--bg) 100%);
-}
-#heroCanvas{position:absolute;inset:0;z-index:1;}
-.hero-gradient{
-  position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,210,63,.16), transparent 60%),
-    radial-gradient(ellipse 60% 40% at 85% 90%, rgba(124,242,156,.08), transparent 60%);
-}
 .hero-content{position:relative;z-index:2;max-width:820px;text-align:center;margin:0 auto;}
-.hero .eyebrow{color:#f4f6f9;border-color:rgba(255,255,255,.28);background:rgba(10,20,40,.28);backdrop-filter:blur(6px);}
-.hero .hero-title{color:#fff;}
-.hero .hero-sub{color:rgba(255,255,255,.86);}
-.hero .hero-trust{color:rgba(255,255,255,.7);}
-.hero .btn-ghost{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(6px);}
-.hero .btn-ghost:hover{background:rgba(255,255,255,.18);}
-.hero .scroll-hint{border-color:rgba(255,255,255,.4);}
+.hero .eyebrow{color:#f4f6f9;border-color:rgba(255,255,255,.3);background:rgba(8,16,30,.45);backdrop-filter:blur(8px);}
+.hero .hero-title{color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.5),0 1px 3px rgba(0,0,0,.4);}
+.hero .hero-title .grad-text{text-shadow:none;filter:drop-shadow(0 2px 14px rgba(0,0,0,.4));}
+.hero .hero-sub{color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.55),0 1px 2px rgba(0,0,0,.4);}
+.hero .hero-trust{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6);}
+.hero .btn-ghost{background:rgba(8,16,30,.4);border-color:rgba(255,255,255,.4);color:#fff;backdrop-filter:blur(8px);}
+.hero .btn-ghost:hover{background:rgba(8,16,30,.6);}
+.hero .scroll-hint{border-color:rgba(255,255,255,.5);}
+.hero .scroll-hint span{box-shadow:0 1px 8px rgba(0,0,0,.5);}
 .eyebrow{
   display:inline-flex;align-items:center;gap:8px;font-size:.85rem;color:var(--text-dim);
   padding:7px 16px;border:1px solid var(--border);border-radius:100px;background:rgba(11,30,58,.03);
